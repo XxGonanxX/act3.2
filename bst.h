@@ -1,8 +1,8 @@
 // =================================================================
 //
 // File: bst.h
-// Author:
-// Date:
+// Author: Alan Patricio González Bernal
+// Date: 27/10/2022
 //
 // =================================================================
 #ifndef BST_H
@@ -268,7 +268,17 @@ void Node<T>::preOrder(std::stringstream &aux) const {
 template <class T>
 uint Node<T>::leaves() const {
 	//TO DO
-	return 0;
+	int numleaves;
+	for(int cont; cont+1 < value; cont++){
+	
+	if(left != NULL || right != NULL){
+
+		numleaves++;
+
+	}
+
+	}
+	return numleaves;
 }
 
 // =================================================================
